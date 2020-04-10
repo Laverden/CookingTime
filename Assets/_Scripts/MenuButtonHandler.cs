@@ -19,15 +19,15 @@ public class MenuButtonHandler : MonoBehaviour
     public Color32 textHighlight;
 
     [SerializeField]
-    public Transform parentCanvas;
+    public Transform parentPanel;
     [SerializeField]
-    public Transform linkedCanvas;
+    public Transform linkedPanel;
     
     
     public void OnClick()
     {
-        this.parentCanvas.gameObject.SetActive(false);
-        this.linkedCanvas.gameObject.SetActive(true);
+        this.parentPanel.gameObject.SetActive(false);
+        this.linkedPanel.gameObject.SetActive(true);
     }
 
     public void IsHighlighted(bool flag)
