@@ -26,6 +26,10 @@ public class ConversorPanelHandler : MonoBehaviour
     public void ConvertQuantity()
     {
         float inputValue = float.Parse(this.inputField.text);
+        int inputUnitIndex = this.inputUnitDropdown.value;
+
+        Debug.Log(inputUnitIndex);
+        Debug.Log(this.inputUnitDropdown.options[inputUnitIndex].text);
 
         this.DisplayResult(inputValue);
 
